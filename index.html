@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Trigo & Âmbar — Padaria Artesanal</title>
+<meta name="description" content="Trigo & Âmbar: padaria artesanal de alto padrão. Pães, bolos, doces e cafés feitos à mão, todos os dias.">
+
+<!-- Google Fonts: Fraunces (display), Jost (corpo), Caveat (assinatura manuscrita) -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,500;1,9..144,600&family=Jost:wght@300;400;500;600;700&family=Caveat:wght@500;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+<a href="#main" class="skip-link">Pular para o conteúdo</a>
+
+<!-- ==========================================================================
+     CABEÇALHO / NAVEGAÇÃO
+     ========================================================================== -->
+<header class="site-header" id="siteHeader">
+  <div class="container">
+    <a href="#topo" class="brand" aria-label="Trigo & Âmbar — página inicial">
+      <svg class="brand-mark" viewBox="0 0 48 48" fill="none" aria-hidden="true">
+        <circle cx="24" cy="24" r="23" fill="#2B1B12"/>
+        <path d="M14 27c0-6 4.5-11 10-11s10 5 10 11c0 3-2 5-4 5H18c-2 0-4-2-4-5Z" stroke="#E4C171" stroke-width="1.6"/>
+        <path d="M18 20c1-2 3-3 6-3s5 1 6 3" stroke="#E4C171" stroke-width="1.4" stroke-linecap="round"/>
+        <path d="M17 32h14" stroke="#E4C171" stroke-width="1.4" stroke-linecap="round"/>
+      </svg>
+      <span class="brand-name">Trigo & Âmbar<span>padaria artesanal</span></span>
+    </a>
+
+    <nav class="nav-desktop" aria-label="Navegação principal">
+      <ul class="nav-links">
+        <li><a href="#sobre">Sobre Nós</a></li>
+        <li><a href="#diferenciais">Diferenciais</a></li>
+        <li><a href="#produtos">Produtos</a></li>
+        <li><a href="#depoimentos">Depoimentos</a></li>
+        <li><a href="#local">Localização</a></li>
+        <li><a href="#" class="nav-cardapio-btn" data-open-cardapio>Cardápio</a></li>
+      </ul>
+      <div class="nav-cta">
+        <a href="#contato" class="btn btn-primary">Fazer Pedido</a>
+      </div>
+    </nav>
+
+    <button class="hamburger" id="hamburgerBtn" aria-expanded="false" aria-controls="mobileDrawer" aria-label="Abrir menu">
+      <span></span>
+    </button>
+  </div>
+</header>
+
+<div class="drawer-overlay" id="drawerOverlay"></div>
+<nav class="mobile-drawer" id="mobileDrawer" aria-label="Navegação mobile">
+  <a href="#sobre" data-close-drawer>Sobre Nós</a>
+  <a href="#diferenciais" data-close-drawer>Diferenciais</a>
+  <a href="#produtos" data-close-drawer>Produtos</a>
+  <a href="#depoimentos" data-close-drawer>Depoimentos</a>
+  <a href="#local" data-close-drawer>Localização</a>
+  <a href="#" class="drawer-cardapio" data-open-cardapio data-close-drawer>Cardápio</a>
+  <a href="#contato" class="btn btn-primary" data-close-drawer>Fazer Pedido</a>
+</nav>
+
+<!-- ==========================================================================
+     CONTEÚDO PRINCIPAL
+     ========================================================================== -->
+<main id="main">
+
+  <!-- HERO -->
+  <section class="hero" id="topo">
+    <img class="hero-photo" src="https://images.unsplash.com/photo-1504400739660-22ebeb14f00a?auto=format&fit=crop&w=1740&q=80" alt="Pão artesanal recém-assado em fundo escuro, com farinha polvilhada" fetchpriority="high">
+
+    <div class="container hero-grid">
+      <div>
+        <span class="hero-badge">Desde 1998 · Feito à mão, todos os dias</span>
+        <h1>Onde a tradição vira arte, <em>um pão de cada vez.</em></h1>
+        <p class="lead">Fermentação lenta, farinhas selecionadas e o mesmo forno de pedra desde a nossa fundação. Uma padaria artesanal para quem não abre mão do sabor de verdade.</p>
+        <div class="hero-actions">
+          <a href="#" class="btn btn-gold" data-open-cardapio>Ver Cardápio</a>
+          <a href="#contato" class="btn btn-outline" style="border-color:rgba(250,241,226,.4); color:var(--cream);">Fazer Pedido</a>
+        </div>
+      </div>
+
+      <div class="hero-stamp" aria-hidden="true">
+        <div class="stamp-rotator">
+          <svg viewBox="0 0 200 200">
+            <defs>
+              <path id="circlePath" d="M 100,100 m -78,0 a 78,78 0 1,1 156,0 a 78,78 0 1,1 -156,0"/>
+            </defs>
+            <circle cx="100" cy="100" r="96" fill="none" stroke="rgba(228,193,113,.5)" stroke-width="1.5" stroke-dasharray="3 6"/>
+            <text font-size="13.5" fill="#E4C171" letter-spacing="3" font-family="Jost, sans-serif" font-weight="600">
+              <textPath href="#circlePath">FRESCO TODOS OS DIAS • TRIGO & ÂMBAR •</textPath>
+            </text>
+          </svg>
+        </div>
+        <div class="stamp-center">
+          <svg width="86" height="86" viewBox="0 0 86 86" fill="none">
+            <ellipse cx="43" cy="46" rx="30" ry="20" fill="#C99A3E"/>
+            <path d="M20 40c3-9 12-15 23-15s20 6 23 15" stroke="#2B1B12" stroke-width="2" fill="none" stroke-linecap="round"/>
+            <path d="M27 33c2-4 7-6 16-6s14 2 16 6" stroke="#2B1B12" stroke-width="1.6" fill="none" stroke-linecap="round"/>
+          </svg>
+        </div>
+      </div>
+    </div>
+
+    <div class="hero-scroll-cue" aria-hidden="true"><span class="line"></span>Role para explorar</div>
+  </section>
+  <div class="scallop-divider to-cream" style="background-color:#3a2718; margin-top:-2px;" aria-hidden="true"></div>
+
+  <!-- SOBRE NÓS -->
+  <section class="sobre" id="sobre">
+    <div class="container sobre-grid">
+      <div class="sobre-art">
+        <div class="frame">
+          <img src="https://images.unsplash.com/photo-1568254183919-78a4f43a2877?auto=format&fit=crop&w=1000&q=80" alt="Prateleira de padaria com pães artesanais recém-assados" loading="lazy">
+        </div>
+        <div class="floating-card">
+          <div>
+            <strong>27</strong>
+            <span>anos de tradição em fermentação artesanal</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="sobre-text">
+        <span class="eyebrow">Nossa história</span>
+        <h2 style="margin-top:14px; font-size:clamp(2rem,4vw,2.7rem);">Uma família, um forno de pedra e a receita da vovó Amália.</h2>
+        <p style="margin-top:22px;">Tudo começou em 1998, numa pequena esquina do bairro, quando Dona Amália decidiu transformar a receita de pão que aprendeu com a própria mãe em um pequeno negócio de família. O forno a lenha, construído à mão, ainda está lá — e é nele que assamos boa parte dos nossos pães até hoje.</p>
+        <p>Com o tempo, a padaria cresceu, mas os valores nunca mudaram: fermentação lenta, ingredientes selecionados e o cuidado de quem faz pão para a própria família. Hoje, a terceira geração segue à frente do balcão, mantendo viva a receita e o carinho que sempre nos definiram.</p>
+        <div class="sobre-signature">
+          <span class="sig-script">Amália & filhos</span>
+          <span class="sig-role">Fundadora e atual equipe de mestres padeiros</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="scallop-divider to-deep" aria-hidden="true"></div>
+
+  <!-- DIFERENCIAIS -->
+  <section class="diferenciais" id="diferenciais">
+    <div class="container">
+      <div class="section-head center">
+        <span class="eyebrow" style="justify-content:center;">Nossos diferenciais</span>
+        <h2>O que faz cada pão sair diferente do forno</h2>
+        <p>Detalhes que parecem pequenos, mas fazem toda a diferença no sabor, na textura e na experiência de comprar pão de verdade.</p>
+      </div>
+
+      <div class="dif-grid">
+        <div class="dif-card">
+          <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 13c0-4 3.5-7 8-7s8 3 8 7c0 2.2-1.8 4-4 4H8c-2.2 0-4-1.8-4-4Z"/><path d="M8 9c1-1.5 2.2-2 4-2s3 .5 4 2"/></svg></div>
+          <h3>Pães artesanais</h3>
+          <p>Fermentação natural de longa duração, sovados e modelados à mão, um a um, todos os dias.</p>
+        </div>
+        <div class="dif-card">
+          <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3c-3 3-5 6-5 9a5 5 0 0 0 10 0c0-3-2-6-5-9Z"/><path d="M12 13v7"/></svg></div>
+          <h3>Ingredientes selecionados</h3>
+          <p>Farinhas de moinhos parceiros, manteiga de verdade e zero conservantes artificiais.</p>
+        </div>
+        <div class="dif-card">
+          <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3.5 2"/></svg></div>
+          <h3>Frescor diário</h3>
+          <p>Fornadas novas de manhã e à tarde — o que não vende no dia, vira doação no fim da noite.</p>
+        </div>
+        <div class="dif-card">
+          <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s-7-4.35-9.5-8.5C.5 8.5 3 5 6.5 5c2 0 3.2 1 5.5 3 2.3-2 3.5-3 5.5-3 3.5 0 6 3.5 4 7.5C19 16.65 12 21 12 21Z"/></svg></div>
+          <h3>Atendimento de qualidade</h3>
+          <p>Equipe treinada para recomendar o pão certo pra cada mesa e cada ocasião, com carinho.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="scallop-divider to-cream" style="background-color:#F3E6CE;" aria-hidden="true"></div>
+
+  <!-- PRODUTOS EM DESTAQUE -->
+  <section class="produtos" id="produtos">
+    <div class="container">
+      <div class="section-head">
+        <span class="eyebrow">Produtos em destaque</span>
+        <h2>Um pouco de tudo o que sai do nosso forno</h2>
+        <p>Da casquinha crocante ao recheio generoso — veja as categorias que você encontra na loja, e confira o cardápio completo a qualquer momento.</p>
+      </div>
+
+      <div class="produtos-grid" id="produtosGrid"><!-- preenchido via JS a partir dos dados do cardápio --></div>
+    </div>
+  </section>
+
+  <div class="scallop-divider to-espresso" style="background-color:var(--cream);" aria-hidden="true"></div>
+
+  <!-- DEPOIMENTOS -->
+  <section class="depoimentos" id="depoimentos">
+    <div class="container">
+      <div class="section-head center">
+        <span class="eyebrow" style="justify-content:center; color:var(--wheat-light);">Depoimentos</span>
+        <h2>Quem prova, vira cliente fiel</h2>
+        <p>Algumas palavras de quem já faz parte da nossa história.</p>
+      </div>
+
+      <div class="depo-grid">
+        <article class="depo-card">
+          <div class="depo-stars" aria-label="Avaliação 5 de 5 estrelas">
+            <svg viewBox="0 0 20 20"><path d="M10 1l2.6 6.2 6.4.5-4.9 4.3 1.5 6.3L10 15l-5.6 3.3 1.5-6.3L1 7.7l6.4-.5Z"/></svg>
+            <svg viewBox="0 0 20 20"><path d="M10 1l2.6 6.2 6.4.5-4.9 4.3 1.5 6.3L10 15l-5.6 3.3 1.5-6.3L1 7.7l6.4-.5Z"/></svg>
+            <svg viewBox="0 0 20 20"><path d="M10 1l2.6 6.2 6.4.5-4.9 4.3 1.5 6.3L10 15l-5.6 3.3 1.5-6.3L1 7.7l6.4-.5Z"/></svg>
+            <svg viewBox="0 0 20 20"><path d="M10 1l2.6 6.2 6.4.5-4.9 4.3 1.5 6.3L10 15l-5.6 3.3 1.5-6.3L1 7.7l6.4-.5Z"/></svg>
+            <svg viewBox="0 0 20 20"><path d="M10 1l2.6 6.2 6.4.5-4.9 4.3 1.5 6.3L10 15l-5.6 3.3 1.5-6.3L1 7.7l6.4-.5Z"/></svg>
+          </div>
+          <p class="quote">"O pão de fermentação natural daqui mudou meu café da manhã. Casca crocante, miolo macio — dá pra sentir que é feito com calma."</p>
+          <div class="depo-person">
+            <div class="depo-avatar">M</div>
+            <div><strong>Mariana Costa</strong><span>Cliente desde 2019</span></div>
+          </div>
+        </article>
+
+        <article class="depo-card">
+          <div class="depo-stars" aria-label="Avaliação 5 de 5 estrelas">
+            <svg viewBox="0 0 20 20"><path d="M10 1l2.6 6.2 6.4.5-4.9 4.3 1.5 6.3L10 15l-5.6 3.3 1.5-6.3L1 7.7l6.4-.5Z"/></svg>
+            <svg viewBox="0 0 20 20"><path d="M10 1l2.6 6.2 6.4.5-4.9 4.3 1.5 6.3L10 15l-5.6 3.3 1.5-6.3L1 7.7l6.4-.5Z"/></svg>
+            <svg viewBox="0 0 20 20"><path d="M10 1l2.6 6.2 6.4.5-4.9 4.3 1.5 6.3L10 15l-5.6 3.3 1.5-6.3L1 7.7l6.4-.5Z"/></svg>
+            <svg viewBox="0 0 20 20"><path d="M10 1l2.6 6.2 6.4.5-4.9 4.3 1.5 6.3L10 15l-5.6 3.3 1.5-6.3L1 7.7l6.4-.5Z"/></svg>
+            <svg viewBox="0 0 20 20"><path d="M10 1l2.6 6.2 6.4.5-4.9 4.3 1.5 6.3L10 15l-5.6 3.3 1.5-6.3L1 7.7l6.4-.5Z"/></svg>
+          </div>
+          <p class="quote">"Encomendei o bolo de aniversário da minha filha e foi além do esperado — lindo e delicioso. Atendimento atencioso do início ao fim."</p>
+          <div class="depo-person">
+            <div class="depo-avatar">R</div>
+            <div><strong>Rafael Nogueira</strong><span>Cliente desde 2021</span></div>
+          </div>
+        </article>
+
+        <article class="depo-card">
+          <div class="depo-stars" aria-label="Avaliação 5 de 5 estrelas">
+            <svg viewBox="0 0 20 20"><path d="M10 1l2.6 6.2 6.4.5-4.9 4.3 1.5 6.3L10 15l-5.6 3.3 1.5-6.3L1 7.7l6.4-.5Z"/></svg>
+            <svg viewBox="0 0 20 20"><path d="M10 1l2.6 6.2 6.4.5-4.9 4.3 1.5 6.3L10 15l-5.6 3.3 1.5-6.3L1 7.7l6.4-.5Z"/></svg>
+            <svg viewBox="0 0 20 20"><path d="M10 1l2.6 6.2 6.4.5-4.9 4.3 1.5 6.3L10 15l-5.6 3.3 1.5-6.3L1 7.7l6.4-.5Z"/></svg>
+            <svg viewBox="0 0 20 20"><path d="M10 1l2.6 6.2 6.4.5-4.9 4.3 1.5 6.3L10 15l-5.6 3.3 1.5-6.3L1 7.7l6.4-.5Z"/></svg>
+            <svg viewBox="0 0 20 20"><path d="M10 1l2.6 6.2 6.4.5-4.9 4.3 1.5 6.3L10 15l-5.6 3.3 1.5-6.3L1 7.7l6.4-.5Z"/></svg>
+          </div>
+          <p class="quote">"Café tirado na hora, croissant amanteigado de verdade e um cheirinho de padaria que lembra a casa da minha avó. Viciante."</p>
+          <div class="depo-person">
+            <div class="depo-avatar">C</div>
+            <div><strong>Camila Ferreira</strong><span>Cliente desde 2022</span></div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- LOCALIZAÇÃO + HORÁRIO -->
+  <section class="local" id="local">
+    <div class="container">
+      <div class="section-head">
+        <span class="eyebrow">Onde estamos</span>
+        <h2>Venha sentir o cheirinho de pão quentinho</h2>
+        <p>Estamos de portas abertas todos os dias, num cantinho fácil de chegar e gostoso de ficar.</p>
+      </div>
+
+      <div class="local-grid">
+        <div class="mapa-ilustrado">
+          <svg viewBox="0 0 500 420" preserveAspectRatio="xMidYMid slice" role="img" aria-label="Mapa ilustrativo da região onde a padaria está localizada">
+            <rect width="500" height="420" fill="#F3E6CE"/>
+            <g stroke="#D9BE8B" stroke-width="10">
+              <line x1="0" y1="90" x2="500" y2="90"/>
+              <line x1="0" y1="240" x2="500" y2="240"/>
+              <line x1="0" y1="340" x2="500" y2="340"/>
+              <line x1="140" y1="0" x2="140" y2="420"/>
+              <line x1="360" y1="0" x2="360" y2="420"/>
+            </g>
+            <g stroke="#C99A3E" stroke-width="4" stroke-dasharray="10 8" fill="none">
+              <path d="M20 20 L140 90 L250 165 L250 260"/>
+            </g>
+            <g fill="#8A4E2B" opacity=".55">
+              <rect x="30" y="110" width="70" height="50" rx="4"/>
+              <rect x="180" y="30" width="60" height="40" rx="4"/>
+              <rect x="380" y="120" width="80" height="60" rx="4"/>
+              <rect x="60" y="260" width="55" height="55" rx="4"/>
+              <rect x="300" y="270" width="70" height="45" rx="4"/>
+            </g>
+            <circle cx="250" cy="235" r="18" fill="#2B1B12"/>
+            <path d="M250 200 c-22 0-38 16-38 36 0 26 38 54 38 54s38-28 38-54c0-20-16-36-38-36Z" fill="#2B1B12"/>
+            <circle cx="250" cy="236" r="12" fill="#E4C171"/>
+          </svg>
+        </div>
+
+        <div class="info-col">
+          <div class="info-block">
+            <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="#2B1B12" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s-7-7.5-7-12a7 7 0 0 1 14 0c0 4.5-7 12-7 12Z"/><circle cx="12" cy="9" r="2.4"/></svg></div>
+            <div>
+              <h3>Endereço</h3>
+              <p>Rua das Amoreiras, 245 — Jardim Primavera, São Paulo/SP</p>
+            </div>
+          </div>
+          <div class="info-block">
+            <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="#2B1B12" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 5c0 8 7 15 15 15l3-4-6-3-2 2c-3-1.5-5-3.5-6-6l2-2-3-6Z"/></svg></div>
+            <div>
+              <h3>Telefone / WhatsApp</h3>
+              <p>(11) 4002-8922</p>
+            </div>
+          </div>
+          <div class="info-block" style="align-items:flex-start;">
+            <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="#2B1B12" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3.5 2"/></svg></div>
+            <div style="width:100%;">
+              <h3>Horário de funcionamento</h3>
+              <table class="horario-table" aria-label="Horário de funcionamento por dia da semana">
+                <tbody id="horarioBody"><!-- preenchido via JS --></tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA FINAL / CONTATO -->
+  <section class="cta-final" id="contato">
+    <div class="container">
+      <h2>Bora encomendar o seu pão de hoje?</h2>
+      <p>Fale com a gente pelo WhatsApp ou visite uma das nossas lojas — o forno está sempre quente esperando por você.</p>
+      <div class="hero-actions" style="justify-content:center;">
+        <a href="tel:+551140028922" class="btn btn-primary">Ligar Agora</a>
+        <a href="#" class="btn btn-outline" data-open-cardapio>Ver Cardápio Completo</a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<!-- ==========================================================================
+     RODAPÉ
+     ========================================================================== -->
+<footer class="site-footer">
+  <div class="container footer-grid">
+    <div class="footer-brand">
+      <span class="brand-name">Trigo & Âmbar</span>
+      <p>Padaria artesanal fundada em 1998, com fermentação natural, ingredientes selecionados e o carinho de sempre.</p>
+      <div class="footer-social">
+        <a href="#" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.7"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.2" cy="6.8" r="1"/></svg></a>
+        <a href="#" aria-label="Facebook"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.7"><path d="M14 9h3V6h-3c-2 0-3.5 1.5-3.5 3.5V12H8v3h2.5v6h3v-6H16l.5-3h-3V9.6c0-.4.3-.6.5-.6Z"/></svg></a>
+        <a href="#" aria-label="WhatsApp"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.7"><path d="M4 5c0 8 7 15 15 15l3-4-6-3-2 2c-3-1.5-5-3.5-6-6l2-2-3-6Z"/></svg></a>
+      </div>
+    </div>
+
+    <div class="footer-col">
+      <h4>Navegação</h4>
+      <ul>
+        <li><a href="#sobre">Sobre Nós</a></li>
+        <li><a href="#diferenciais">Diferenciais</a></li>
+        <li><a href="#produtos">Produtos</a></li>
+        <li><a href="#" data-open-cardapio>Cardápio</a></li>
+        <li><a href="#depoimentos">Depoimentos</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-col">
+      <h4>Categorias</h4>
+      <ul id="footerCategorias"><!-- preenchido via JS --></ul>
+    </div>
+
+    <div class="footer-col">
+      <h4>Contato</h4>
+      <div class="contato-item">
+        <svg viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s-7-7.5-7-12a7 7 0 0 1 14 0c0 4.5-7 12-7 12Z"/><circle cx="12" cy="9" r="2.4"/></svg>
+        <span>Rua das Amoreiras, 245 — Jardim Primavera, São Paulo/SP</span>
+      </div>
+      <div class="contato-item">
+        <svg viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 5c0 8 7 15 15 15l3-4-6-3-2 2c-3-1.5-5-3.5-6-6l2-2-3-6Z"/></svg>
+        <span>(11) 4002-8922</span>
+      </div>
+      <div class="contato-item">
+        <svg viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg>
+        <span>contato@trigoeambar.com.br</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="container footer-bottom">
+    <span>© <span id="anoAtual">2026</span> Trigo & Âmbar Padaria Artesanal. Todos os direitos reservados.</span>
+    <span><a href="#">Política de Privacidade</a> · <a href="#">Termos de Uso</a></span>
+  </div>
+</footer>
+
+<!-- ==========================================================================
+     MODAL DO CARDÁPIO
+     ========================================================================== -->
+<div class="cardapio-overlay" id="cardapioOverlay" role="dialog" aria-modal="true" aria-labelledby="cardapioTitulo">
+  <div class="cardapio-modal" id="cardapioModal">
+    <div class="cardapio-head">
+      <button class="cardapio-back" id="cardapioBackBtn" aria-label="Voltar ao site">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 12H5M12 19l-7-7 7-7"/></svg>
+        <span>Voltar</span>
+      </button>
+      <button class="cardapio-close" id="cardapioCloseBtn" aria-label="Fechar cardápio">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M6 6l12 12M18 6 6 18"/></svg>
+      </button>
+      <h2 id="cardapioTitulo">Nosso Cardápio</h2>
+      <p>Tudo feito artesanalmente, todos os dias — escolha uma categoria abaixo</p>
+    </div>
+
+    <div class="cardapio-tabs" id="cardapioTabs" role="tablist" aria-label="Categorias do cardápio"><!-- preenchido via JS --></div>
+    <div class="cardapio-body" id="cardapioBody"><!-- preenchido via JS --></div>
+  </div>
+</div>
+
+<script src="script.js" defer></script>
+</body>
+</html>
